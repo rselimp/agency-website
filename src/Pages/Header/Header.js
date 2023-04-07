@@ -6,7 +6,7 @@ import { AiOutlineMenu,AiOutlineClose } from "react-icons/ai";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className="flex items-center justify-between flex-wrap p-6 bg-green-100 mx-auto">
+        <nav className="flex items-center justify-between flex-wrap p-6 mx-auto">
      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
      <img src={logo} className="w-100 h-10 mr-2" alt="Logo" /><p className='text-black'>Agency text</p>
      </div>

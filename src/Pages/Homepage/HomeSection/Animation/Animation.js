@@ -1,41 +1,40 @@
 import React from 'react';
-import { Carousel } from 'react-carousel3d';
+import './Animation.css'
+import image1 from '../../../../images/s1.jpg'
+import image2 from '../../../../images/s2.jpg'
+import image3 from '../../../../images/s3.jpg'
+import image4 from '../../../../images/s4.jpg'
+import image5 from '../../../../images/s5.jpg'
+import image6 from '../../../../images/s6.jpg'
+import image7 from '../../../../images/s7.jpg'
+import image8 from '../../../../images/s8.jpg'
+
+
+
+
+
+
 const Animation = () => {
     
-    const style = {
-        width: 297,
-        height: 296,
-      };
+   
     return (
-        <div
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      background: 'linear-gradient(to bottom, #16235e 0%, #020223 100%)',
-    }}
-  >
-    <Carousel height={460} width={980} yOrigin={42} yRadius={48} autoPlay={true}>
-      <div key={1} style={style}>
-        <img alt="" src="/image/1.png" />
-      </div>
-      <div key={2} style={style}>
-        <img alt="" src="/image/2.png" />
-      </div>
-      <div key={3} style={style}>
-        <img alt="" src="/image/3.png" />
-      </div>
-      <div key={4} style={style}>
-        <img alt="" src="/image/4.png" />
-      </div>
-      <div key={5} style={style}>
-        <img alt="" src="/image/5.png" />
-      </div>
-      <div key={6} style={style}>
-        <img alt="" src="/image/6.png" />
-      </div>
-    </Carousel>
-  </div>
-    );
-};
+      
+<div className='head'>
+<div className='slider'>
+    <span style={{"--i":"1"}}><img src={image1} alt="" /></span>
 
+    <span style={{"--i":"2"}}><img src={image2} alt="" /></span>
+    <span style={{"--i":"3"}}><img src={image3} alt="" /></span>
+    <span style={{"--i":"4"}}><img src={image4} alt="" /></span>
+    <span style={{"--i":"5"}}><img src={image5} alt="" /></span>
+    <span style={{"--i":"6"}}><img src={image6} alt="" /></span>
+    <span style={{"--i":"7"}}><img src={image7} alt="" /></span>
+    <span style={{"--i":"8"}}><img src={image8} alt="" /></span>
+   
+    
+
+</div>
+</div>
+    )
+}
 export default Animation;
